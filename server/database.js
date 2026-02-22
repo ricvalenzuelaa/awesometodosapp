@@ -5,7 +5,7 @@ const dns = require('dns');
 const uri = process.env.MONGODB_URI || "mongodb://localhost:27017/";
 
 try {
-  dns.setServers(['0.0.0.0','1.1.1.1']);
+  dns.setServers(['0.0.0.0','1.1.1.1','8.8.8.8']);
 } catch (error) {
 
 }
